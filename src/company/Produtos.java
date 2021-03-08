@@ -1,11 +1,19 @@
 package company;
+import java.util.ArrayList;
 
 public class Produtos {
-    private String nome;
-    private String codigo;
-    private float prezo;
-    private int cantidade;
 
+    //*Declaramos arraylist
+    ArrayList <Produtos>listaProdutos= new ArrayList<Produtos>();
+
+    //*Declaramos variables
+            private String nome;
+            private String codigo;
+            private float prezo;
+            private int cantidade;
+
+
+    //*Se añade el constructor parametrizado, el constructor vacío, getters y setters
     public Produtos(String nome, String codigo, float prezo, int cantidade){
         this.nome = nome;
         this.codigo = codigo;
