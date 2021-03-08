@@ -14,10 +14,10 @@ package company;
 
 
         public static Produtos pedirProduto(String mensaxe ){
-            String nome=JOptionPane.showInputDialog("Introduce titulo");
-            String codigo=JOptionPane.showInputDialog("Introduce autor");
+            String nome=JOptionPane.showInputDialog("Introduce nome");
+            String codigo=JOptionPane.showInputDialog("Introduce codigo");
             float prezo=Float.parseFloat(JOptionPane.showInputDialog("Introduce o prezo"));
-            int cantidade=Integer.parseInt(JOptionPane.showInputDialog("Introduce as unidades"));
+            int cantidade=Integer.parseInt(JOptionPane.showInputDialog("Introduce a cantidade"));
             Produtos lp= new Produtos(nome, codigo, prezo, cantidade);
             return lp;
         }
