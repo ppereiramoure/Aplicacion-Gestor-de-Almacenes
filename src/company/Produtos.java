@@ -13,6 +13,10 @@ public class Produtos {
         this.cantidade = cantidade;
     }
 
+    public Produtos(){
+
+    }
+
     public String getNome(){
         return nome;
     }
