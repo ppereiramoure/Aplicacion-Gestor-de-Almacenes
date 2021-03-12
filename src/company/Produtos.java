@@ -13,7 +13,7 @@ public class Produtos {
             private int cantidade;
 
 
-    //*Se añade el constructor parametrizado, el constructor vacío, getters y setters
+    //*Engadimos constructor parametrizado, o constructor vacío, getters e setters
     public Produtos(String nome, String codigo, float prezo, int cantidade){
         this.nome = nome;
         this.codigo = codigo;
@@ -53,4 +53,14 @@ public class Produtos {
         this.cantidade = cantidade;
     }
 
+    @Override
+    public String toString() {
+        return "Produtos{" +
+                "listaProdutos=" + listaProdutos +
+                ", nome='" + nome + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", prezo=" + prezo +
+                ", cantidade=" + cantidade +
+                '}';
+    }
 }
